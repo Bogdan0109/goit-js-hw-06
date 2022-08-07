@@ -50,9 +50,11 @@ function onHandlerDestroyBtn(event) {
 }
 
 function createBoxes(amount) {
+  let padding = 20;
   amount.forEach((el) => {
     const div = document.createElement("div");
-    div.style.padding = "30px";
+    padding += 10;
+    div.style.padding = `${padding}px`;
 
     div.style.backgroundColor = `${getRandomHexColor()}`;
 
